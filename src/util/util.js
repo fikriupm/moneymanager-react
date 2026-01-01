@@ -1,7 +1,5 @@
-import isNan from "lodash/isNaN.js";
-
 export const addThousandSeparators = (num) => {
-  if (num == null || isNan(num)) return '';
+  if (num == null || isNaN(num)) return '';
 
   //convert number to string to handle decimal
   const numStr = num.toString();
