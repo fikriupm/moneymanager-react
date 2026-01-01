@@ -15,19 +15,16 @@ export const API_ENDPOINTS = {
   CATEGORY_BY_TYPE: (type) => `/categories/${type}`,
   ADD_INCOME: "/incomes",
   DELETE_INCOME: (incomeId) => `/incomes/${incomeId}`,
-  // INCOME_EXCEL_DOWNLPOAD: "/incomes/download/excel", // old endpoint
-  INCOME_EXCEL_DOWNLPOAD: "/excel/download/income",
-  EMAIL_INCOME: "/email/income-excel",
-  // EMAIL_INCOME: "/email/excel/income", old endpoint
+  INCOME_EXCEL_DOWNLPOAD: (year, month) => `/incomes/download/excel?year=${year}&month=${month}`,
+  EMAIL_INCOME: (year, month) => `/email/income-excel?year=${year}&month=${month}`,
 
   GET_ALL_EXPENSES: "/expenses",
   GET_EXPENSES_BY_MONTH: (year, month) => `/expenses/by-month?year=${year}&month=${month}`,
   ADD_EXPENSE: "/expenses",
   DELETE_EXPENSE: (expenseId) => `/expenses/${expenseId}`,
-  EXPENSE_EXCEL_DOWNLOAD: "/excel/download/expense",
-  EMAIL_EXPENSE: "/email/expense-excel",
+  EXPENSE_EXCEL_DOWNLOAD: (year, month) => `/expenses/download/excel?year=${year}&month=${month}`,
+  EMAIL_EXPENSE: (year, month) => `/email/expense-excel?year=${year}&month=${month}`,
   // alias kept for backwards-compatibility with existing code
-
   APPLY_FILTERS: "/filter",
   DASHBOARD_DATA: "/dashboard",
   UPLOAD_IMAGE: `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`,

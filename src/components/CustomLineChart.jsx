@@ -70,7 +70,7 @@ const CustomLineChart = ({ data }) => {
           activeDot={{ r: 6 }}
           fill="#e0e7ff"
           isAnimationActive={true}
-          name="Total Income"
+          name="Total Amount"
         />
       </LineChart>
     </ResponsiveContainer>

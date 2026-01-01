@@ -134,7 +134,7 @@ const Income = () => {
 
   const handleDownloadIncomeDetails = async () => {
     try {
-      const response = await axiosConfig.get(API_ENDPOINTS.INCOME_EXCEL_DOWNLPOAD, {
+      const response = await axiosConfig.get(API_ENDPOINTS.INCOME_EXCEL_DOWNLPOAD(selectedYear, selectedMonth), {
         responseType: 'blob', 
       });
       let filename = 'income_details.xlsx';
@@ -156,8 +156,7 @@ const Income = () => {
 
   const handleEmailIncomeDetails = async () => {
     try {
-      // const response = await axiosConfig.post(API_ENDPOINTS.EMAIL_INCOME);
-      const response = await axiosConfig.get(API_ENDPOINTS.EMAIL_INCOME);
+      const response = await axiosConfig.get(API_ENDPOINTS.EMAIL_INCOME(selectedYear, selectedMonth));
       if (response.status === 200){
         toast.success("Income details emailed successfully");
       }

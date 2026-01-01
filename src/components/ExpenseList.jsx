@@ -1,4 +1,4 @@
-import { Download, Mail } from "lucide-react";
+import { Download, LoaderCircle, Mail } from "lucide-react";
 import moment from "moment";
 import TransactionInfoCard from "./TransactionInfoCard";
 import { useState } from "react";

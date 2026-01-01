@@ -130,7 +130,7 @@ const Expense = () => {
 
   const handleDownloadExpenseDetails = async () => {
     try {
-      const response = await axiosConfig.get(API_ENDPOINTS.EXPENSE_EXCEL_DOWNLOAD, {
+      const response = await axiosConfig.get(API_ENDPOINTS.EXPENSE_EXCEL_DOWNLOAD(selectedYear, selectedMonth), {
         responseType: 'blob', 
       });
       const filename = 'expense_details.xlsx';
@@ -151,7 +151,7 @@ const Expense = () => {
 
   const handleEmailExpenseDetails = async () => {
     try {
-      const response = await axiosConfig.get(API_ENDPOINTS.EMAIL_EXPENSE);
+      const response = await axiosConfig.get(API_ENDPOINTS.EMAIL_EXPENSE(selectedYear, selectedMonth));
       if (response.status === 200){
         toast.success("Expense details emailed successfully");
       }
