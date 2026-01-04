@@ -2,6 +2,39 @@
 
 A modern web application for managing personal finances, tracking income and expenses with visual analytics.
 
+## 📸 UI 
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="src/assets/moneymanager.png" alt="Dashboard Overview" width="400"/>
+        <p><em>Dashboard</em></p>
+      </td>
+      <td align="center">
+        <img src="src/assets/moneymanager1.png" alt="Income Tracking" width="400"/>
+        <p><em>Category</em></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="src/assets/moneymanager2.png" alt="Expense Tracking" width="400"/>
+        <p><em>Income Tracking</em></p>
+      </td>
+      <td align="center">
+        <img src="src/assets/moneymanager3.png" alt="Categories" width="400"/>
+        <p><em>Expense Management</em></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2">
+        <img src="src/assets/moneymanager4.png" alt="Analytics" width="400"/>
+        <p><em>Filter</em></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## Features
 
 - 📊 **Dashboard Overview** - View your financial summary at a glance with pie charts and line graphs
