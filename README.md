@@ -7,9 +7,9 @@ A modern web application for managing personal finances, tracking income and exp
 - **Frontend**: https://fza-moneymanager.netlify.app/
 - **Backend Repository**: https://github.com/fikriupm/Money-Manager-api
 
-> **Note**: The backend API is deployed on Render's free tier and may experience inactivity suspensions. Please allow a moment for the service to spin up on first use (or suspended already).
+> **Note**: The backend API is deployed on Render's free tier and may experience inactivity suspensions. Please allow a moment for the service to spin up on first use (or **suspended** already).
 
-## �📸 UI 
+## UI 
 
 <div align="center">
   <table>
