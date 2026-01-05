@@ -2,7 +2,7 @@
 
 A modern web application for managing personal finances, tracking income and expenses with visual analytics.
 
-## � Live Demo & Repository
+## Live Demo & Repository
 
 - **Frontend**: https://fza-moneymanager.netlify.app/
 - **Backend Repository**: https://github.com/fikriupm/Money-Manager-api
@@ -34,7 +34,7 @@ A modern web application for managing personal finances, tracking income and exp
       </td>
     </tr>
     <tr>
-      <td align="center" colspan="2">
+      <td align="center">
         <img src="src/assets/moneymanager4.png" alt="Filter" width="400"/>
         <p><em>Filter</em></p>
       </td>
