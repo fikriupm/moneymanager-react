@@ -2,7 +2,14 @@
 
 A modern web application for managing personal finances, tracking income and expenses with visual analytics.
 
-## 📸 UI 
+## � Live Demo & Repository
+
+- **Frontend**: https://fza-moneymanager.netlify.app/
+- **Backend Repository**: https://github.com/fikriupm/Money-Manager-api
+
+> **Note**: The backend API is deployed on Render's free tier and may experience inactivity suspensions. Please allow a moment for the service to spin up on first use (or suspended already).
+
+## �📸 UI 
 
 <div align="center">
   <table>
@@ -12,24 +19,28 @@ A modern web application for managing personal finances, tracking income and exp
         <p><em>Dashboard</em></p>
       </td>
       <td align="center">
-        <img src="src/assets/moneymanager1.png" alt="Income Tracking" width="400"/>
+        <img src="src/assets/moneymanager1.png" alt="Category" width="400"/>
         <p><em>Category</em></p>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="src/assets/moneymanager2.png" alt="Expense Tracking" width="400"/>
+        <img src="src/assets/moneymanager2.png" alt="Income Tracking" width="400"/>
         <p><em>Income Tracking</em></p>
       </td>
       <td align="center">
-        <img src="src/assets/moneymanager3.png" alt="Categories" width="400"/>
+        <img src="src/assets/moneymanager3.png" alt="Expense" width="400"/>
         <p><em>Expense Management</em></p>
       </td>
     </tr>
     <tr>
       <td align="center" colspan="2">
-        <img src="src/assets/moneymanager4.png" alt="Analytics" width="400"/>
+        <img src="src/assets/moneymanager4.png" alt="Filter" width="400"/>
         <p><em>Filter</em></p>
+      </td>
+      <td align="center">
+        <img src="src/assets/moneymanager5.png" alt="email" width="400"/>
+        <p><em>Email Report</em></p>
       </td>
     </tr>
   </table>
