@@ -197,9 +197,10 @@ const Expense = () => {
               onClose={() => setOpenAddExpenseModal(false)}
               title="Add Expense"
             >
-              <AddExpenseForm 
+              <AddExpenseForm
                 onAddExpense={(expense) => handleAddExpense(expense)}
                 categories={categories}
+                onCategoryCreated={fetchExpenseCategories}
               />
             </Modal>
 
