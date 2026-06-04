@@ -1,5 +1,6 @@
 import Menubar from './Menubar.jsx';
 import Sidebar from './Sidebar.jsx';
+import AiChatWidget from './AiChatWidget.jsx';
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContext.jsx';
 
@@ -14,6 +15,7 @@ const Dashboard = ({ children, activeMenu }) => {
             <Sidebar activeMenu = {activeMenu} />
           </div>
           <div className="grow mx-5">{children}</div>
+          <AiChatWidget />
         </div>
        )}
     </div>

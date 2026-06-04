@@ -35,6 +35,10 @@ export const API_ENDPOINTS = {
   DASHBOARD_DATA: "/dashboard",
   // AI: suggest a category for a transaction description (no DB write)
   CATEGORIZE_TRANSACTION: "/ai/categorize",
+  // AI: chat assistant grounded in the user's transactions
+  AI_CHAT: "/ai/chat",
+  // AI: RAG variant — retrieves only the most relevant transactions
+  AI_CHAT_RAG: "/ai/chat-rag",
   UPLOAD_IMAGE: `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`,
 };
 
