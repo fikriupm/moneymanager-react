@@ -16,6 +16,18 @@ const AiChatWidget = () => {
   const [mode, setMode] = useState("smart"); // "smart" (full context + memory) or "rag" (retrieval)
   const endRef = useRef(null);
 
+  // What each mode is good at — shown as a hover tooltip and a live hint under the toggle.
+  const MODES = {
+    smart: {
+      label: "Smart",
+      hint: "Full picture, accurate numbers — best for totals like \"How much did I spend on food?\"",
+    },
+    rag: {
+      label: "RAG",
+      hint: "Semantic search over your transactions — best for finding things like \"Did I buy durian?\". Totals can be approximate.",
+    },
+  };
+
   // Auto-scroll to the newest message
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -66,21 +78,26 @@ const AiChatWidget = () => {
           </div>
 
           {/* Mode toggle: Smart (full context + memory) vs RAG (retrieval) */}
-          <div className="flex items-center gap-1 px-3 py-2 bg-purple-50 border-b border-purple-100 text-xs">
-            <span className="text-slate-500 mr-1">Mode:</span>
-            {["smart", "rag"].map((m) => (
-              <button
-                key={m}
-                onClick={() => setMode(m)}
-                className={`px-2 py-0.5 rounded-full capitalize transition ${
-                  mode === m
-                    ? "bg-purple-600 text-white"
-                    : "bg-white text-purple-700 border border-purple-200 hover:bg-purple-100"
-                }`}
-              >
-                {m}
-              </button>
-            ))}
+          <div className="px-3 py-2 bg-purple-50 border-b border-purple-100 text-xs">
+            <div className="flex items-center gap-1">
+              <span className="text-slate-500 mr-1">Mode:</span>
+              {Object.keys(MODES).map((m) => (
+                <button
+                  key={m}
+                  onClick={() => setMode(m)}
+                  title={MODES[m].hint}
+                  className={`px-2 py-0.5 rounded-full transition ${
+                    mode === m
+                      ? "bg-purple-600 text-white"
+                      : "bg-white text-purple-700 border border-purple-200 hover:bg-purple-100"
+                  }`}
+                >
+                  {MODES[m].label}
+                </button>
+              ))}
+            </div>
+            {/* Live hint for the selected mode */}
+            <p className="mt-1.5 text-[11px] leading-snug text-slate-500">{MODES[mode].hint}</p>
           </div>
 
           {/* Messages */}
