@@ -7,7 +7,11 @@ A modern web application for managing personal finances, tracking income and exp
 - **Frontend**: https://fza-moneymanager.netlify.app/
 - **Backend Repository**: https://github.com/fikriupm/Money-Manager-api
 
-> **Note**: The backend API is deployed on Render's free tier and may experience inactivity suspensions. Please allow a moment for the service to spin up on first use (or **suspended** already).
+> **Note**: The backend API is deployed on Render's free tier, which spins down after inactivity. On first use, please allow **up to a minute** for the service to wake up (login/register will feel stuck — just wait and retry once).
+>
+> **If the backend never responds** (Render free-tier services can get suspended), the live demo won't be able to log in. In that case, please run the app locally instead — clone both repositories and follow the [Installation](#installation) steps below (the local frontend automatically proxies API calls to a backend running on `http://localhost:8080`).
+>
+> Quick health check: open https://money-manager-api-xrpm.onrender.com/api/v1.0/status — if it eventually returns a response, the backend is awake; if it times out, it's down.
 
 ## UI 
 
@@ -88,8 +92,9 @@ cd moneymanagerwebapp
 npm install
 ```
 
-3. Configure API endpoint:
-   - Update `src/util/apiEndpoints.js` with your backend URL if needed
+3. Configure API endpoint (optional):
+   - By default the dev server proxies `/api` requests to `http://localhost:8080`, so no configuration is needed when the backend runs locally
+   - To point at a different backend, set `VITE_BASE_URL` (e.g. in a `.env.local` file: `VITE_BASE_URL=https://your-backend/api/v1.0`)
 
 4. Start the development server:
 ```bash
