@@ -1,5 +1,10 @@
-// export const BASE_URL = "https://money-manager-api-xrpm.onrender.com/api/v1.0";
-export const BASE_URL = "http://localhost:8080/api/v1.0";
+// Same-origin relative base: the browser calls /api/v1.0/... on whatever host
+// served the SPA, and a reverse proxy forwards it to the backend.
+//   - prod (nginx image): the /api/ location proxies to the backend service
+//   - dev (`npm run dev`): the Vite server proxies /api to localhost:8080
+// So one build artifact runs in every environment and CORS never applies.
+// Override only for unusual setups (e.g. pointing dev at a remote API).
+export const BASE_URL = import.meta.env.VITE_BASE_URL || "/api/v1.0";
 // baseURL: "http://localhost:5000/api",
 const CLOUDINARY_CLOUD_NAME = "dxitnvyrt";
 

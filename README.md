@@ -7,7 +7,16 @@ A modern web application for managing personal finances, tracking income and exp
 - **Frontend**: https://fza-moneymanager.netlify.app/
 - **Backend Repository**: https://github.com/fikriupm/Money-Manager-api
 
-> **Note**: The backend API is deployed on Render's free tier and may experience inactivity suspensions. Please allow a moment for the service to spin up on first use (or **suspended** already).
+> **Note**: The backend API is deployed on Render's free tier, which spins down after inactivity. On first use, please allow **up to a minute** for the service to wake up (login/register will feel stuck — just wait and retry once).
+>
+> **If the backend never responds** (Render free-tier services can get suspended), the live demo won't be able to log in. In that case, please run the app locally instead — clone both repositories and follow the [Installation](#installation) steps below (the local frontend automatically proxies API calls to a backend running on `http://localhost:8080`).
+
+### Checking whether the Render backend is up
+
+1. Open the public health URL: https://money-manager-api-xrpm.onrender.com/api/v1.0/status
+2. **Be patient on the first request** — a free-tier service that has gone to sleep takes up to a minute to cold-start. The tab will look stuck; that's normal.
+3. **If it responds** (any response, even a plain "OK"), the backend is awake and the live demo will work.
+4. **If it still times out after ~2 minutes**, the service is down or suspended — use the local setup below instead. (Owner: check the service state and logs at https://dashboard.render.com.)
 
 ## UI 
 
@@ -57,6 +66,8 @@ A modern web application for managing personal finances, tracking income and exp
 - 📥 **Export Data** - Download financial reports as Excel files
 - 📧 **Email Reports** - Send reports directly to your email
 - 👤 **User Profiles** - Personalized profiles with custom avatars
+- 🤖 **AI Category Suggestion** - One click suggests the best category for an expense (Gemini-powered)
+- 💬 **AI Finance Assistant** - "Ringgit" chat widget answers questions about your own transactions, with Smart (full-context) and RAG (vector retrieval) modes
 
 ## Tech Stack
 
@@ -88,8 +99,9 @@ cd moneymanagerwebapp
 npm install
 ```
 
-3. Configure API endpoint:
-   - Update `src/util/apiEndpoints.js` with your backend URL if needed
+3. Configure API endpoint (optional):
+   - By default the dev server proxies `/api` requests to `http://localhost:8080`, so no configuration is needed when the backend runs locally
+   - To point at a different backend, set `VITE_BASE_URL` (e.g. in a `.env.local` file: `VITE_BASE_URL=https://your-backend/api/v1.0`)
 
 4. Start the development server:
 ```bash
@@ -104,6 +116,29 @@ npm run dev
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+
+## Run with Docker
+
+The image is environment-agnostic: nginx serves the built SPA and reverse-proxies `/api` to whatever `BACKEND_URL` points at when the container starts — no API URL is baked into the build, and CORS never applies.
+
+```bash
+docker build -t moneymanager-frontend .
+docker run -p 5173:80 -e BACKEND_URL=http://host.docker.internal:8080 moneymanager-frontend
+```
+
+To run the **full stack** (MySQL + Redis + backend + frontend) with one command, use the compose file in the [backend repository](https://github.com/fikriupm/Money-Manager-api) under `deploy/` — see its `deploy/README.md` for Docker Compose and Kubernetes instructions.
+
+## Seed Demo Data
+
+The AI features (category suggestion, finance chat) are much more interesting with history to reason over. The seeder generates ~6 months of realistic MYR transactions and pushes them through the real REST API:
+
+```bash
+node seed/seed.mjs --dump      # only write seed/dataset.json, no API calls
+node seed/seed.mjs             # register/login the demo account and push everything
+node seed/seed.mjs --email you@example.com --password secret --name "You"
+```
+
+Requires Node 18+ and the backend running on `http://localhost:8080` (override with `--url`). Re-running pushes the same data again — use a fresh account to avoid duplicates.
 
 ## Project Structure
 

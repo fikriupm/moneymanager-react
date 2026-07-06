@@ -1,0 +1,991 @@
+{
+  "categories": [
+    {
+      "name": "Salary",
+      "type": "income",
+      "icon": "💼"
+    },
+    {
+      "name": "Freelance",
+      "type": "income",
+      "icon": "💻"
+    },
+    {
+      "name": "Bonus",
+      "type": "income",
+      "icon": "🎁"
+    },
+    {
+      "name": "Investment",
+      "type": "income",
+      "icon": "📈"
+    },
+    {
+      "name": "Groceries",
+      "type": "expense",
+      "icon": "🛒"
+    },
+    {
+      "name": "Rent",
+      "type": "expense",
+      "icon": "🏠"
+    },
+    {
+      "name": "Transportation",
+      "type": "expense",
+      "icon": "⛽"
+    },
+    {
+      "name": "Dining",
+      "type": "expense",
+      "icon": "🍜"
+    },
+    {
+      "name": "Utilities",
+      "type": "expense",
+      "icon": "💡"
+    },
+    {
+      "name": "Entertainment",
+      "type": "expense",
+      "icon": "🎬"
+    },
+    {
+      "name": "Shopping",
+      "type": "expense",
+      "icon": "🛍️"
+    },
+    {
+      "name": "Health",
+      "type": "expense",
+      "icon": "💊"
+    },
+    {
+      "name": "Subscriptions",
+      "type": "expense",
+      "icon": "📺"
+    }
+  ],
+  "incomes": [
+    {
+      "category": "Salary",
+      "name": "Monthly salary",
+      "amount": 5200,
+      "date": "2026-01-24"
+    },
+    {
+      "category": "Freelance",
+      "name": "Side project",
+      "amount": 721.99,
+      "date": "2026-01-17"
+    },
+    {
+      "category": "Bonus",
+      "name": "Year-end bonus",
+      "amount": 5200,
+      "date": "2026-01-19"
+    },
+    {
+      "category": "Investment",
+      "name": "Dividend payout",
+      "amount": 195.54,
+      "date": "2026-01-11"
+    },
+    {
+      "category": "Salary",
+      "name": "Monthly salary",
+      "amount": 5200,
+      "date": "2026-02-24"
+    },
+    {
+      "category": "Salary",
+      "name": "Monthly salary",
+      "amount": 5200,
+      "date": "2026-03-24"
+    },
+    {
+      "category": "Investment",
+      "name": "Dividend payout",
+      "amount": 251.29,
+      "date": "2026-03-11"
+    },
+    {
+      "category": "Salary",
+      "name": "Monthly salary",
+      "amount": 5200,
+      "date": "2026-04-24"
+    },
+    {
+      "category": "Freelance",
+      "name": "Side project",
+      "amount": 1568.41,
+      "date": "2026-04-17"
+    },
+    {
+      "category": "Investment",
+      "name": "Dividend payout",
+      "amount": 93.48,
+      "date": "2026-04-11"
+    },
+    {
+      "category": "Salary",
+      "name": "Monthly salary",
+      "amount": 5200,
+      "date": "2026-05-24"
+    },
+    {
+      "category": "Freelance",
+      "name": "Side project",
+      "amount": 1630.73,
+      "date": "2026-05-17"
+    },
+    {
+      "category": "Salary",
+      "name": "Monthly salary",
+      "amount": 5200,
+      "date": "2026-06-10"
+    }
+  ],
+  "expenses": [
+    {
+      "category": "Rent",
+      "name": "Monthly rent",
+      "amount": 1200,
+      "date": "2025-12-31"
+    },
+    {
+      "category": "Utilities",
+      "name": "Electricity & water",
+      "amount": 178.23,
+      "date": "2026-01-04"
+    },
+    {
+      "category": "Utilities",
+      "name": "Internet (Unifi)",
+      "amount": 139,
+      "date": "2026-01-05"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Netflix",
+      "amount": 55,
+      "date": "2026-01-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Spotify",
+      "amount": 22.9,
+      "date": "2026-01-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "iCloud storage",
+      "amount": 13.9,
+      "date": "2026-01-07"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 244.69,
+      "date": "2026-01-02"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 215.55,
+      "date": "2026-01-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 173.8,
+      "date": "2026-01-18"
+    },
+    {
+      "category": "Groceries",
+      "name": "Tesco run",
+      "amount": 88.83,
+      "date": "2026-01-25"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 27.23,
+      "date": "2026-01-26"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 47.58,
+      "date": "2026-01-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 17.54,
+      "date": "2026-01-24"
+    },
+    {
+      "category": "Dining",
+      "name": "Office lunch",
+      "amount": 56.51,
+      "date": "2026-01-12"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 56.6,
+      "date": "2026-01-02"
+    },
+    {
+      "category": "Dining",
+      "name": "Office lunch",
+      "amount": 63.05,
+      "date": "2026-01-21"
+    },
+    {
+      "category": "Transportation",
+      "name": "Petrol",
+      "amount": 80.44,
+      "date": "2026-01-03"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 46.72,
+      "date": "2026-01-13"
+    },
+    {
+      "category": "Transportation",
+      "name": "Grab ride",
+      "amount": 100.6,
+      "date": "2026-01-23"
+    },
+    {
+      "category": "Shopping",
+      "name": "Lazada order",
+      "amount": 230.82,
+      "date": "2026-01-09"
+    },
+    {
+      "category": "Entertainment",
+      "name": "Game purchase",
+      "amount": 111.26,
+      "date": "2026-01-22"
+    },
+    {
+      "category": "Rent",
+      "name": "Monthly rent",
+      "amount": 1200,
+      "date": "2026-01-31"
+    },
+    {
+      "category": "Utilities",
+      "name": "Electricity & water",
+      "amount": 211.78,
+      "date": "2026-02-04"
+    },
+    {
+      "category": "Utilities",
+      "name": "Internet (Unifi)",
+      "amount": 139,
+      "date": "2026-02-05"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Netflix",
+      "amount": 55,
+      "date": "2026-02-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Spotify",
+      "amount": 22.9,
+      "date": "2026-02-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "iCloud storage",
+      "amount": 13.9,
+      "date": "2026-02-07"
+    },
+    {
+      "category": "Groceries",
+      "name": "Tesco run",
+      "amount": 232.36,
+      "date": "2026-02-02"
+    },
+    {
+      "category": "Groceries",
+      "name": "Aeon groceries",
+      "amount": 83.17,
+      "date": "2026-02-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 84.62,
+      "date": "2026-02-18"
+    },
+    {
+      "category": "Groceries",
+      "name": "Tesco run",
+      "amount": 248.68,
+      "date": "2026-02-25"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 29.25,
+      "date": "2026-02-16"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 42.99,
+      "date": "2026-02-21"
+    },
+    {
+      "category": "Dining",
+      "name": "Sushi",
+      "amount": 44.86,
+      "date": "2026-02-03"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 16.23,
+      "date": "2026-02-24"
+    },
+    {
+      "category": "Dining",
+      "name": "Ramen",
+      "amount": 24.68,
+      "date": "2026-02-22"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 34.37,
+      "date": "2026-02-02"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 19.79,
+      "date": "2026-02-10"
+    },
+    {
+      "category": "Transportation",
+      "name": "Touch 'n Go reload",
+      "amount": 159.31,
+      "date": "2026-02-03"
+    },
+    {
+      "category": "Transportation",
+      "name": "Touch 'n Go reload",
+      "amount": 85.57,
+      "date": "2026-02-13"
+    },
+    {
+      "category": "Transportation",
+      "name": "Grab ride",
+      "amount": 115.56,
+      "date": "2026-02-23"
+    },
+    {
+      "category": "Shopping",
+      "name": "Shopee order",
+      "amount": 314.98,
+      "date": "2026-02-15"
+    },
+    {
+      "category": "Health",
+      "name": "Pharmacy",
+      "amount": 130.73,
+      "date": "2026-02-17"
+    },
+    {
+      "category": "Entertainment",
+      "name": "Game purchase",
+      "amount": 83.22,
+      "date": "2026-02-16"
+    },
+    {
+      "category": "Rent",
+      "name": "Monthly rent",
+      "amount": 1200,
+      "date": "2026-02-28"
+    },
+    {
+      "category": "Utilities",
+      "name": "Electricity & water",
+      "amount": 152.93,
+      "date": "2026-03-04"
+    },
+    {
+      "category": "Utilities",
+      "name": "Internet (Unifi)",
+      "amount": 139,
+      "date": "2026-03-05"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Netflix",
+      "amount": 55,
+      "date": "2026-03-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Spotify",
+      "amount": 22.9,
+      "date": "2026-03-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "iCloud storage",
+      "amount": 13.9,
+      "date": "2026-03-07"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 132.07,
+      "date": "2026-03-02"
+    },
+    {
+      "category": "Groceries",
+      "name": "99 Speedmart",
+      "amount": 228.31,
+      "date": "2026-03-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 97.73,
+      "date": "2026-03-18"
+    },
+    {
+      "category": "Groceries",
+      "name": "99 Speedmart",
+      "amount": 185.28,
+      "date": "2026-03-25"
+    },
+    {
+      "category": "Dining",
+      "name": "Sushi",
+      "amount": 18.6,
+      "date": "2026-03-03"
+    },
+    {
+      "category": "Dining",
+      "name": "Office lunch",
+      "amount": 47.48,
+      "date": "2026-03-13"
+    },
+    {
+      "category": "Dining",
+      "name": "Office lunch",
+      "amount": 46.11,
+      "date": "2026-03-23"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 18.79,
+      "date": "2026-03-12"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 59.93,
+      "date": "2026-03-09"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 38.92,
+      "date": "2026-03-02"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 40.54,
+      "date": "2026-03-12"
+    },
+    {
+      "category": "Dining",
+      "name": "Ramen",
+      "amount": 13.57,
+      "date": "2026-03-25"
+    },
+    {
+      "category": "Transportation",
+      "name": "Car service",
+      "amount": 113.17,
+      "date": "2026-03-03"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 102.84,
+      "date": "2026-03-13"
+    },
+    {
+      "category": "Transportation",
+      "name": "Touch 'n Go reload",
+      "amount": 101.94,
+      "date": "2026-03-23"
+    },
+    {
+      "category": "Shopping",
+      "name": "New laptop",
+      "amount": 4200,
+      "date": "2026-03-14"
+    },
+    {
+      "category": "Rent",
+      "name": "Monthly rent",
+      "amount": 1200,
+      "date": "2026-03-31"
+    },
+    {
+      "category": "Utilities",
+      "name": "Electricity & water",
+      "amount": 143.12,
+      "date": "2026-04-04"
+    },
+    {
+      "category": "Utilities",
+      "name": "Internet (Unifi)",
+      "amount": 139,
+      "date": "2026-04-05"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Netflix",
+      "amount": 55,
+      "date": "2026-04-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Spotify",
+      "amount": 22.9,
+      "date": "2026-04-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "iCloud storage",
+      "amount": 13.9,
+      "date": "2026-04-07"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 131.89,
+      "date": "2026-04-02"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 239.32,
+      "date": "2026-04-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Aeon groceries",
+      "amount": 91.55,
+      "date": "2026-04-18"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 218.15,
+      "date": "2026-04-25"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 24.79,
+      "date": "2026-04-20"
+    },
+    {
+      "category": "Dining",
+      "name": "Ramen",
+      "amount": 21.01,
+      "date": "2026-04-01"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 21.57,
+      "date": "2026-04-12"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 52.79,
+      "date": "2026-04-07"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 22.6,
+      "date": "2026-04-09"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 55.36,
+      "date": "2026-04-01"
+    },
+    {
+      "category": "Dining",
+      "name": "Office lunch",
+      "amount": 15.8,
+      "date": "2026-04-19"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 53.27,
+      "date": "2026-04-09"
+    },
+    {
+      "category": "Dining",
+      "name": "McDonald's",
+      "amount": 41.13,
+      "date": "2026-04-12"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 126.53,
+      "date": "2026-04-03"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 89.26,
+      "date": "2026-04-13"
+    },
+    {
+      "category": "Transportation",
+      "name": "Grab ride",
+      "amount": 112.56,
+      "date": "2026-04-23"
+    },
+    {
+      "category": "Shopping",
+      "name": "Phone accessories",
+      "amount": 187.3,
+      "date": "2026-04-09"
+    },
+    {
+      "category": "Entertainment",
+      "name": "Game purchase",
+      "amount": 94.44,
+      "date": "2026-04-23"
+    },
+    {
+      "category": "Rent",
+      "name": "Monthly rent",
+      "amount": 1200,
+      "date": "2026-04-30"
+    },
+    {
+      "category": "Utilities",
+      "name": "Electricity & water",
+      "amount": 159.42,
+      "date": "2026-05-04"
+    },
+    {
+      "category": "Utilities",
+      "name": "Internet (Unifi)",
+      "amount": 139,
+      "date": "2026-05-05"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Netflix",
+      "amount": 55,
+      "date": "2026-05-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Spotify",
+      "amount": 22.9,
+      "date": "2026-05-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "iCloud storage",
+      "amount": 13.9,
+      "date": "2026-05-07"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 86.6,
+      "date": "2026-05-02"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 202.08,
+      "date": "2026-05-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 231.76,
+      "date": "2026-05-18"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 199.59,
+      "date": "2026-05-25"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 55.48,
+      "date": "2026-05-15"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 20.63,
+      "date": "2026-05-05"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 21.84,
+      "date": "2026-05-19"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 20.65,
+      "date": "2026-05-18"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 21.25,
+      "date": "2026-05-01"
+    },
+    {
+      "category": "Dining",
+      "name": "Starbucks",
+      "amount": 56.73,
+      "date": "2026-05-20"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 32.17,
+      "date": "2026-05-18"
+    },
+    {
+      "category": "Dining",
+      "name": "McDonald's",
+      "amount": 45.18,
+      "date": "2026-05-22"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 33.69,
+      "date": "2026-05-01"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 13.95,
+      "date": "2026-05-10"
+    },
+    {
+      "category": "Transportation",
+      "name": "Touch 'n Go reload",
+      "amount": 61.41,
+      "date": "2026-05-03"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 122.64,
+      "date": "2026-05-13"
+    },
+    {
+      "category": "Transportation",
+      "name": "Grab ride",
+      "amount": 51.26,
+      "date": "2026-05-23"
+    },
+    {
+      "category": "Entertainment",
+      "name": "GSC cinema",
+      "amount": 103.36,
+      "date": "2026-05-22"
+    },
+    {
+      "category": "Rent",
+      "name": "Monthly rent",
+      "amount": 1200,
+      "date": "2026-05-31"
+    },
+    {
+      "category": "Utilities",
+      "name": "Electricity & water",
+      "amount": 189.9,
+      "date": "2026-06-04"
+    },
+    {
+      "category": "Utilities",
+      "name": "Internet (Unifi)",
+      "amount": 139,
+      "date": "2026-06-05"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Netflix",
+      "amount": 55,
+      "date": "2026-06-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "Spotify",
+      "amount": 22.9,
+      "date": "2026-06-07"
+    },
+    {
+      "category": "Subscriptions",
+      "name": "iCloud storage",
+      "amount": 13.9,
+      "date": "2026-06-07"
+    },
+    {
+      "category": "Groceries",
+      "name": "Tesco run",
+      "amount": 255.08,
+      "date": "2026-06-02"
+    },
+    {
+      "category": "Groceries",
+      "name": "Mydin weekly",
+      "amount": 213.65,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Aeon groceries",
+      "amount": 184.5,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Groceries",
+      "name": "Jaya Grocer",
+      "amount": 252.76,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 15.51,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Nasi lemak",
+      "amount": 30.41,
+      "date": "2026-06-06"
+    },
+    {
+      "category": "Dining",
+      "name": "Sushi",
+      "amount": 21.3,
+      "date": "2026-06-07"
+    },
+    {
+      "category": "Dining",
+      "name": "Sushi",
+      "amount": 34.5,
+      "date": "2026-06-07"
+    },
+    {
+      "category": "Dining",
+      "name": "McDonald's",
+      "amount": 36.17,
+      "date": "2026-06-03"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 50.8,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 57.62,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Bubble tea",
+      "amount": 46.95,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Mamak dinner",
+      "amount": 59.96,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "Ramen",
+      "amount": 25.46,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Dining",
+      "name": "McDonald's",
+      "amount": 62.06,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 47.3,
+      "date": "2026-06-03"
+    },
+    {
+      "category": "Transportation",
+      "name": "Parking",
+      "amount": 156.23,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Transportation",
+      "name": "Petrol",
+      "amount": 58.56,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Shopping",
+      "name": "Shopee order",
+      "amount": 374.7,
+      "date": "2026-06-10"
+    },
+    {
+      "category": "Health",
+      "name": "Vitamins",
+      "amount": 129.45,
+      "date": "2026-06-10"
+    }
+  ]
+}
